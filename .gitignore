@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 james.code-workspace
+.DS_Store
