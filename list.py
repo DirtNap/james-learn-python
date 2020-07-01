@@ -10,3 +10,6 @@ def print_list(words, l):
 
 print_list("My list", my_list)
 print_list("Other list", other_list)
+
+for x in other_list:
+    print(x)
