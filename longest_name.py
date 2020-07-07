@@ -16,9 +16,11 @@ def get_list_of_names():
     name = 'none yet'
     while True:
         name = input('Enter a name (enter "done" to stop):')
+        name = name.strip()
         if name == 'done':
             break
         result.append(name)
+    print("Collected Names:", result)
     return result
 
 
