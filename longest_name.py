@@ -19,8 +19,8 @@ def get_list_of_names():
         name = name.strip()
         if name == 'done':
             break
-        result.append(name.capitalize())
-    print("Collected Names:", result)
+        if name:
+            result.append(name.capitalize())
     return result
 
 
