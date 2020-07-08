@@ -19,6 +19,11 @@ def get_list_of_names():
         name = name.strip()
         if name == 'done':
             break
+        # try:
+        #     print('The third letter is', name[2])
+        #     print('that worked!')
+        # except IndexError:
+        #     print('too short!')
         if name:
             result.append(name.capitalize())
     return result
