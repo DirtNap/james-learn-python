@@ -1,6 +1,7 @@
 #  Have a list of names
 #  #  Get names from user
 #  #  #  Prompt the user
+#  #  #  #  Don't accept empty names
 #  #  #  Know when the list is done
 #  #  Put them in list
 #  Find the length of each one
@@ -15,9 +16,16 @@ def get_list_of_names():
     name = 'none yet'
     while True:
         name = input('Enter a name (enter "done" to stop):')
+        name = name.strip()
         if name == 'done':
             break
-        result.append(name)
+        # try:
+        #     print('The third letter is', name[2])
+        #     print('that worked!')
+        # except IndexError:
+        #     print('too short!')
+        if name:
+            result.append(name.capitalize())
     return result
 
 
